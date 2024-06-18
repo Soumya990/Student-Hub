@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Student<span>Hub</span></h1>
+        <hr>
+        <p>Welcome to StudentHub, your one-stop portal for student registration and management. This intuitive and user-friendly platform is designed to help you create or update your student profile easily. StudentHub simplifies the registration process and offers a seamless and user-friendly experience for students to register their data on our website.</p>
+    </header>
+    <main>
+        <section id="section1">
+            <form action="" id="stdForm">
+                <label for="stdName">Student Name: </label> <br>
+                <input type="text" name="stdName" id="stdName" placeholder="Enter Student Name"> <br>
+                <label for="stdId">Student Id: </label> <br>
+                <input type="number" name="stdId" id="stdId" placeholder="Enter Student ID"> <br>
+                <label for="stdClass">Student Class: </label> <br>
+                <input type="number" name="stdClass" id="stdClass" placeholder="Enter Student Class"> <br>
+                <label for="stdEmail">Student Email: </label> <br>
+                <input type="email" name="stdEmail" id="stdEmail" placeholder="Enter Student Email"> <br>
+                <label for="contact">Contact No: </label> <br>
+                <input type="number" name="contact" id="contact" placeholder="Enter Student Contact"> <br>
+                <input type="submit" value="Submit" id="submitBtn">
+                <a href="#stdTable">
+                    <input type="button" value="Save Changes" id="changeBtn">
+                </a>
+            </form>
+        </section>
+        <a href="#stdTable">
+            <div id="scroll-btn" title="See Table">
+                <img src="./down-arrow.png" alt="">
+            </div>
+        </a>
+        <hr>
+        <section id="section2">
+            <div class="container">
+                <table id="stdTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Id</th>
+                            <th>Class</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 StudentHub | All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
